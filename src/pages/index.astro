@@ -1,0 +1,14 @@
+<html lang="en">
+  <body>
+    <iframe
+      id="iframe"
+      style="position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;"
+      allowfullscreen></iframe>
+
+    <script>
+      const iframe = document.getElementById("iframe") as HTMLIFrameElement;
+      const youtube_embed = "https://www.youtube.com/embed";
+      iframe.src = `${youtube_embed}${window.location.pathname}`;
+    </script>
+  </body>
+</html>
