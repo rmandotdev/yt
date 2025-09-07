@@ -1,4 +1,6 @@
-/v/:slug    /video?v=:slug    301
+/watch*          /video/:splat      301
 
-/v/         /                 302
-/v          /                 302
+/v/:slug         /video?v=:slug     301
+
+/v/              /                  302
+/v               /                  302
