@@ -8,10 +8,12 @@
     "dev": "bunx astro dev"
   },
   "dependencies": {
-    "astro": "^5.13.5"
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.7",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "typescript": "^5.9.2",
-    "wrangler": "^4.34.0"
+    "wrangler": "^4.36.0"
   }
 }

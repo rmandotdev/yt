@@ -1,16 +1,22 @@
-<html lang="en">
-  <body>
-    <iframe
-      id="iframe"
-      style="position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;"
-      allowfullscreen></iframe>
+---
+import Layout from "~/layouts/Layout.astro";
 
-    <script>
-      const iframe = document.getElementById("iframe") as HTMLIFrameElement;
-      const youtube_embed = "https://www.youtube.com/embed";
-      const urlParams = new URLSearchParams(window.location.search);
-      const id = urlParams.get("v");
-      iframe.src = `${youtube_embed}/${id}`;
-    </script>
-  </body>
-</html>
+const title = null;
+const description = null;
+const canonical = null;
+---
+
+<Layout {title} {description} {canonical}>
+  <iframe
+    id="iframe"
+    class="fixed h-screen w-screen border-[none] left-0 top-0"
+    allowfullscreen></iframe>
+
+  <script>
+    const iframe = document.getElementById("iframe") as HTMLIFrameElement;
+    const youtube_embed = "https://www.youtube.com/embed";
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("v");
+    iframe.src = `${youtube_embed}/${id}`;
+  </script>
+</Layout>
