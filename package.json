@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.1",
+    "astro": "^5.15.3",
     "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "wrangler": "^4.45.0"
+    "wrangler": "^4.45.3"
+  },
+  "overrides": {
+    "esbuild": "^0.25.12"
   }
 }
