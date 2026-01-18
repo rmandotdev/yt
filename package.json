@@ -3,17 +3,20 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bunx astro build",
-    "deploy": "bunx wrangler deploy",
-    "dev": "bunx astro dev"
+    "build": "astro build",
+    "deploy": "wrangler deploy",
+    "dev": "astro dev"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
+    "astro": "^5.16.11",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
     "typescript": "^5.9.3",
-    "wrangler": "^4.56.0"
+    "wrangler": "^4.59.2"
+  },
+  "overrides": {
+    "esbuild": "^0.27.2"
   }
 }
