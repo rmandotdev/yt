@@ -2,21 +2,25 @@
   "name": "yt",
   "type": "module",
   "private": true,
+  "imports": {
+    "#styles": "./src/styles/global.css",
+    "#layout": "./src/layouts/Layout.astro"
+  },
   "scripts": {
     "build": "astro build",
     "deploy": "wrangler deploy",
     "dev": "astro dev"
   },
   "dependencies": {
-    "astro": "^5.16.11",
-    "tailwindcss": "^4.1.18"
+    "astro": "^6.0.8",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.2",
     "typescript": "^5.9.3",
-    "wrangler": "^4.59.2"
+    "wrangler": "^4.76.0"
   },
   "overrides": {
-    "esbuild": "^0.27.2"
+    "esbuild": "^0.27.3"
   }
 }
