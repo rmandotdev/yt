@@ -8,15 +8,17 @@ const canonical = null;
 
 <Layout {title} {description} {canonical}>
   <iframe
+    title="Video"
     id="iframe"
     class="fixed h-screen w-screen border-[none] left-0 top-0"
-    allowfullscreen></iframe>
+    allowfullscreen
+  ></iframe>
 
   <script>
-    const iframe = document.getElementById("iframe") as HTMLIFrameElement;
-    const youtube_embed = "https://www.youtube.com/embed";
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get("v");
-    iframe.src = `${youtube_embed}/${id}`;
+  const iframe = document.getElementById("iframe") as HTMLIFrameElement;
+  const youtube_embed = "https://www.youtube.com/embed";
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get("v");
+  iframe.src = `${youtube_embed}/${id}`;
   </script>
 </Layout>
