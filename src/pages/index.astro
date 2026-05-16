@@ -31,23 +31,23 @@ const canonical = null;
   </div>
 
   <script>
-    const form = document.getElementById("yt-form") as HTMLFormElement;
-    const input = document.getElementById("yt-url") as HTMLInputElement;
+  const form = document.getElementById("yt-form") as HTMLFormElement;
+  const input = document.getElementById("yt-url") as HTMLInputElement;
 
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const url = input.value;
-      try {
-        const urlObj = new URL(url);
-        const videoId = urlObj.searchParams.get("v");
-        if (videoId && videoId.length === 11) {
-          window.location.href = `/v/${videoId}`;
-        } else {
-          alert("Invalid YouTube URL");
-        }
-      } catch {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const url = input.value;
+    try {
+      const urlObj = new URL(url);
+      const videoId = urlObj.searchParams.get("v");
+      if (videoId && videoId.length === 11) {
+        window.location.href = `/v/${videoId}`;
+      } else {
         alert("Invalid YouTube URL");
       }
-    });
+    } catch {
+      alert("Invalid YouTube URL");
+    }
+  });
   </script>
 </Layout>
