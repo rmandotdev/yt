@@ -14,7 +14,7 @@
     "dev": "astro dev"
   },
   "dependencies": {
-    "astro": "6.3.8",
+    "astro": "6.4.2",
     "tailwindcss": "4.3.0"
   },
   "devDependencies": {
