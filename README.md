@@ -1,3 +1,3 @@
 # YouTube embed
 
-<https://yt.rman.dev>
+[yt.rman.dev](https://yt.rman.dev)

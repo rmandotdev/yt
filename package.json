@@ -16,7 +16,6 @@
   "overrides": {
     "@jridgewell/trace-mapping": "0.3.31",
     "esbuild": "0.28.1",
-    "is-docker": "4.0.0",
     "unstorage": "2.0.0-alpha.7"
   },
   "dependencies": {
@@ -28,6 +27,6 @@
     "@gameroman/config": "0.2.6",
     "@tailwindcss/vite": "4.3.3",
     "typescript": "7.0.2",
-    "wrangler": "4.110.0"
+    "wrangler": "4.115.0"
   }
 }
