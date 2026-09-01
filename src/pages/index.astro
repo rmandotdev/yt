@@ -37,11 +37,10 @@ const input = document.getElementById("yt-url") as HTMLInputElement;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const url = input.value;
   try {
-    const urlObj = new URL(url);
-    const videoId = urlObj.searchParams.get("v");
-    if (videoId && videoId.length === 11) {
+    const url = new URL(input.value);
+    const videoId = url.searchParams.get("v");
+    if (videoId?.length === 11) {
       window.location.href = `/v/${videoId}`;
     } else {
       alert("Invalid YouTube URL");
