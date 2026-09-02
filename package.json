@@ -22,7 +22,7 @@
     "unstorage": "2.0.0-alpha.9"
   },
   "dependencies": {
-    "astro": "7.2.9",
+    "astro": "7.2.10",
     "tailwindcss": "4.3.3"
   },
   "devDependencies": {
